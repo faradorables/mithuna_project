@@ -1,0 +1,1 @@
+export { default as TropicalOasisPashmina } from '../assets/model/tropical_oasis_pashmina.jpg';
