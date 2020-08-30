@@ -2,15 +2,12 @@ import React, { Component } from 'react'
 import { 
     Navbar, 
     Nav, 
-    NavDropdown, 
-    Container, 
-    Image,
+    NavDropdown,
 } from 'react-bootstrap'
-import { Logo } from '../configs/Png'
-import { TropicalOasisPashmina } from '../configs/Model'
+import { Logo } from '../../configs/Png'
 import './styles.css';
 
-export default class Home extends Component {
+export default class NavigationBar extends Component {
   render() {
     return (
     <>
@@ -25,8 +22,8 @@ export default class Home extends Component {
                 />
             </Navbar.Brand>
             <Nav className="mr-auto">
-                <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#link">About</Nav.Link>
+                <Nav.Link href="/">Home</Nav.Link>
+                <Nav.Link href="about">About</Nav.Link>
                 <Nav.Link href="#link">Shop</Nav.Link>
                 <NavDropdown title="Catalog" id="basic-nav-dropdown">
                     <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
@@ -37,10 +34,6 @@ export default class Home extends Component {
                 </NavDropdown>
             </Nav>
         </Navbar>
-        <Container>
-            <Image src={TropicalOasisPashmina}/>
-        </Container>
-
     </>
     )
   }
